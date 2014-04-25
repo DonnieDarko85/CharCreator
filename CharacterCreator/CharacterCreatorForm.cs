@@ -25,6 +25,7 @@ namespace CharacterCreator
         {
             using (var SaveDialog = new SaveFileDialog() { Filter = "(*.xml)|*.xml" })
             {
+                Console.WriteLine();
                 if (SaveDialog.ShowDialog() == DialogResult.OK)
                 {
                     int ParsedLevel = int.Parse(LevelTextBox.Text);
